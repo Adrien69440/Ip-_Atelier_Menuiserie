@@ -13,9 +13,17 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
 #logo {
   margin-top: 30px;
-  width: 50px;
+  width: 150px;
 }
 
 #contact {
@@ -32,7 +40,11 @@ img {
 }
 
 body {
-  background-color: red;
+  background-image: url(../assets/images/Ipe_detail.jpg);
+  background-attachment: scroll;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
 }
 
 ul {
@@ -119,6 +131,10 @@ nav {
   margin: auto;
 }
 
+.body-projet {
+  background-image: none;
+}
+
 .projet {
   width: 400px;
   margin: 30px;
@@ -138,6 +154,8 @@ nav {
 .projet img {
   width: 400px;
   height: 266px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .picture {
@@ -148,10 +166,12 @@ nav {
 }
 
 .projet .date-project {
+  text-align: center;
   font-size: 0.875rem;
 }
 
 .projet span {
+  text-align: center;
   text-transform: uppercase;
   display: block;
 }

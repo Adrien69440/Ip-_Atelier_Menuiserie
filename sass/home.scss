@@ -1,43 +1,4 @@
-
-// REM font-sizes
-$fs-14: 0.875rem;
-$fs-16: 1rem;
-$fs-18: 1.125rem;
-$fs-20: 1.25rem;
-$fs-22: 1.375rem;
-$fs-24: 1.5rem;
-$fs-32: 2rem;
-$fs-33: 2.0625rem;
-$fs-36: 2.25rem;
-$fs-40: 2.5rem;
-$fs-50: 3.125rem;
-$fs-60: 3.75rem;
-$fs-80: 5rem;
-// / $color:
-// Fonts
- $heading-antic-didone: "Antic Didone";
- $base-text-lato: "Lato";
- $base-text-raleway: "Raleway";
-
-// Palette
-$orange-main: #E78C15;
-$orange-dark: #7D4700;
-$background-nav-main: #fff;
-$dark-black: #0c0e0d;
-$background-main:#F4F7F6;
-$background-main-header:#1D1D1D;
-$text-color-header:#fff;
-$background-main-footer:#1D1D1D;
-$text-color-footer:#fff;
-$color-quote:gray;
-$background-tittle-card:#fff;
-// reset
-*,::before,::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
+@import "./bases/index";
 
 a {
     text-decoration: none;
@@ -50,7 +11,7 @@ img {
 // Les ID #
 #logo{
     margin-top: 30px;
-    width: 50px;
+    width:150px;
 }
 #contact{
     border: 1px black solid;
@@ -69,11 +30,13 @@ flex-wrap: wrap;
 body
 {
     // font-family:  ;
-     background-color: red;
-    // background-image: url(###);
-    // background-attachment:scroll;
-    // background-repeat: repeat-x;  <-- le fond d'écran se répète horizontalement
-    // background-position: center center ;
+    //  background-color: red;
+    background-image: url(../assets/images/Ipe_detail.jpg);
+    background-attachment:scroll;
+    background-repeat: repeat-x;  
+    background-position: center;
+    background-size:cover;
+
    
     // margin: 0;
     // padding: 0;
@@ -175,6 +138,9 @@ nav{
     margin: auto;
 }
 // cards*******************************************************
+.body-projet{
+    background-image: none;
+}
 .projet{
 width: 400px;
 margin: 30px;
@@ -194,6 +160,8 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 .projet img {
 width: 400px;
 height: 266px;
+overflow: hidden;
+object-fit: cover;
 
 }
 .picture{
@@ -203,11 +171,16 @@ overflow: hidden;
 margin-bottom: 15px;
 }
 .projet .date-project{
+    text-align: center;
     font-size: $fs-14;
+   
+    
 }
 .projet span{
+    text-align: center;
     text-transform: uppercase;
     display: block;
+ 
 }
 
 // fin cards*************************************************
