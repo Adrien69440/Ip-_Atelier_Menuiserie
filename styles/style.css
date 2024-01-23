@@ -254,6 +254,28 @@ nav {
   background-color: #999999;
 }
 
+.container-contact {
+  width: 80%;
+  margin: auto;
+  height: auto;
+}
+
+.background-title {
+  background-color: #ebebeb;
+  padding: 10px;
+  border: #fff;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.background-formulaire {
+  background-color: #ebebeb;
+  padding: 10px;
+  border: #fff;
+  border-radius: 10px;
+  margin: 5px;
+}
+
 footer {
   font-weight: bold;
   font-size: 1.5rem;

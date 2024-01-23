@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://kit.fontawesome.com/e6e1e21d75.js" crossorigin="anonymous"></script>
-    <title>Ipé Atelier Menuiserie|Contacts</title>
+    <title>Ipé Atelier Menuiserie | Contacts</title>
 </head>
- <header class="main-header">
-            <h1>Nicolas Lonjaret</h1>
-           <span class="separator"></span>
-            <h2>Menuisier,rénovateur éthique</h2>
-            <img id="logo" src="../assets/logo/logo-essai.png" alt="logo">      
-    </header>
+
 <body>
-    
-    <a href="../index.html"><span class="material-symbols-outlined">
-        arrow_back
-        </span> retour acceuil</a>
-    <h1>Contact telephonique</h1>
-    <p>06-01-14-33-48</p>
-    <h1>EMAIL@</h1>
-    <p>wapol@hotmail.fr</p>
+    <header class="main-header">
+        <h1>Nicolas Lonjaret</h1>
+        <span class="separator"></span>
+        <h2>Menuisier, rénovateur éthique</h2>
+        <img id="logo" src="../assets/logo/logo-essai.png" alt="logo">
+    </header>
+
+    <a href="../index.html">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span> retour accueil
+    </a>
+
+    <div class="container-contact">
+        <div class="background-title">
+            <h1>Contact téléphonique</h1>
+            <p>06-01-14-33-48</p>
+        </div>
+
+        <div class="background-title">
+            <h1>EMAIL@</h1>
+            <a href="#">wapol@hotmail.fr</a>
+        </div>
+
+        <!-- formulaire de contact -->
+        <section class="background-formulaire">
+            <form action="#" method="post">
+                <p>
+                    Nom
+                    <label for="nom"></label>
+                    <input type="text" name="nom" placeholder="Exemple : Lonjaret">
+                </p>
+            </form>
+
+            <form action="#" method="post">
+                <p>
+                    Prénom
+                    <label for="prenom"></label>
+                    <input type="text" name="prenom" placeholder="Exemple : Nicolas">
+                </p>
+            </form>
+
+            <form action="#" method="post">
+                <p>
+                    N° de téléphone
+                    <label for="telephone"></label>
+                    <input type="text" name="telephone" placeholder="Exemple: 0601143348">
+                </p>
+            </form>
+
+            <form action="#" method="post">
+                <p>
+                    Adresse email
+                    <label for="email"></label>
+                    <input type="text" name="email" placeholder="Exemple: ipe Atelier Menuiserie">
+                </p>
+            </form>
+
+            <form action="#" method="post">
+                <p>
+                    Description rapide du projet:
+                    <label for="projet"></label><br/>
+                    <textarea name="projet" id="projet" cols="30" rows="10"></textarea>
+                </p>
+            </form>
+        </section>
+        <!-- fin formulaire de contact -->
+    </div>
+
+    <footer>
+        <span>2024 &copy;Nicolas Lonjaret</span>
+        <a href="#">
+            <span><i class="fa-brands fa-instagram"></i></span>
+        </a>
+    </footer>
 </body>
-<footer>
-    <span>2024 &copy;Nicolas Lonjaret</span>
-   <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
-</footer>
+
 </html>
